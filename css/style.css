@@ -6,7 +6,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 @font-face {
     font-family: 'sf-pro-display';
     src: url('../fonts/SF-Pro-Display-Regular.woff2') format('woff2'), url('../fonts/SF-Pro-Display-Regular.woff') format('woff'), url('../fonts/SF-Pro-Display-Regular.ttf') format('ttf');

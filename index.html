@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
 <header class="header">
@@ -20,7 +21,7 @@
             <span></span>
           </button>
           <ul class="menu__list">
-            <li class="menu__item"><a href="#about" class="menu__link">О НАС</a></li>
+            <li class="menu__item"><a href="#about" class="menu__link" id="#scroll">О НАС</a></li>
             <li class="menu__item"><a href="#prices" class="menu__link">СТОИМОСТЬ</a></li>
             <li class="menu__item"><a href="#services" class="menu__link">ДОП. УСЛУГИ</a></li>
             <li class="menu__item"><a href="#photos" class="menu__link">ФОТО</a></li>
@@ -55,7 +56,7 @@
 <main class="main">
   <a class="back_to_top" title="Наверх">↑</a>
   <section class="about">
-    <a name="about"></a>
+    <a name="about" id="#about"></a>
     <div class="container">
       <h2 class="title">о нас</h2>
       <div class="about__item">
@@ -411,7 +412,9 @@
     </div>
   </div>
 </footer>
-
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>

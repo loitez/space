@@ -41,8 +41,7 @@ $(function(){
 
     function backToTop() {
         if (window.pageYOffset > 0) {
-            window.scrollBy(0, -50);
-            setTimeout(backToTop, 0);
+            window.scrollTo(pageXOffset, 0);
         }
     }
 
@@ -51,3 +50,4 @@ $(function(){
     window.addEventListener('scroll', trackScroll);
     goTopBtn.addEventListener('click', backToTop);
 })();
+
