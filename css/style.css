@@ -96,23 +96,23 @@ body {
 }
 .header {
     background-image: url('../images/header-bg.jpg');
-    background-position: top center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
     /*position: relative;*/
 }
-.header::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 10%;
-    bottom: 0;
-    left: 0;
-    background: transparent;
-    background-image: linear-gradient(180deg, #010203 0%, rgba(1, 2, 3, 0) 100%);
-    transform: rotate(-180deg);
-}
+/*.header::after {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 10%;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    background: transparent;*/
+/*    background-image: linear-gradient(180deg, #010203 0%, rgba(1, 2, 3, 0) 100%);*/
+/*    transform: rotate(-180deg);*/
+/*}*/
 .header__inner {
     display: -webkit-box;
     display: -moz-box;
@@ -210,7 +210,7 @@ body {
     display: -webkit-flex;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     margin-top: 40px;
 }
 .header__description-text {
